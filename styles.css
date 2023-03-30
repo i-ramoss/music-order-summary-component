@@ -74,9 +74,10 @@ button {
   gap: 4.5rem;
 
   height: 67rem;
-  width: 45rem;
+  max-width: 45rem;
   background-color: var(--very-pale-blue);
   border-radius: 1.6rem;
+  margin: 2rem;
 
   z-index: 3;
 
@@ -84,6 +85,7 @@ button {
 }
 
 .illustration {
+  width: 100%;
   border-radius: 1.6rem 1.6rem 0 0;
 }
 
@@ -155,13 +157,10 @@ button {
   flex-direction: column;
   align-items: center;
   gap: 3rem;
-
-  min-width: 35rem;
 }
 
 .payment-button {
-  width: 100%;
-  padding: 1.6rem 0;
+  padding: 1.6rem 10rem;
   background-color: var(--bright-blue);
   border-radius: 0.8rem;
 
@@ -187,4 +186,19 @@ button {
 
 .order-button:hover {
   color: hsl(224, 23%, 40%);
+}
+
+@media only screen and (max-width: 470px) {
+  .order {
+    gap: 3.5rem;
+    height: 75vh;
+  }
+
+  .background-image {
+    display: none;
+  }
+
+  .payment-button {
+    padding: 1.6rem 8rem;
+  }
 }
