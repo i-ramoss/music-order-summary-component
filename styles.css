@@ -124,8 +124,9 @@ button {
   justify-self: flex-start;
 }
 
-.plan-time h4 {
+.plan-time .plan-recurrence {
   font-size: 1.6rem;
+  font-weight: bold;
   color: var(--dark-blue);
 }
 
